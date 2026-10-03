@@ -94,6 +94,13 @@ jobs:
       run: |
         ccache -sv
 
+    - name: Smoke test (start the app and take screenshots)
+      continue-on-error: true
+      timeout-minutes: 15
+      shell: pwsh
+      run: |
+        ./buildscripts/ci/sada/smoke_test.ps1
+
     - name: Upload portable build
       uses: actions/upload-artifact@v7
       with:

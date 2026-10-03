@@ -33,6 +33,14 @@ write_report() {
     cp latest.txt "run-${GITHUB_RUN_ID}-${STATUS}.txt"
     # keep the branch small: only the 12 newest run files
     ls -1t run-*.txt 2>/dev/null | tail -n +13 | xargs -r rm -f
+
+    # smoke-test screenshots and app logs (latest run only)
+    if [ -d "${GITHUB_WORKSPACE}/smoke" ]; then
+        rm -rf smoke
+        mkdir -p smoke
+        cp -r "${GITHUB_WORKSPACE}/smoke/." smoke/
+        echo "run_id: ${GITHUB_RUN_ID}  sha: ${GITHUB_SHA}" > smoke/RUN.txt
+    fi
 }
 
 for attempt in 1 2 3; do
