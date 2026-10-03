@@ -102,6 +102,7 @@ public:
     enum class MeterPosition {
         TopBar = 0,
         SideBar = 1,
+        Bottom = 2, // Sada: full-width horizontal meter below the editor
     };
     Q_ENUM(MeterPosition)
 };

@@ -449,6 +449,32 @@ DockPage {
                 navigationSection: historyPanel.navigationSection
                 navigationOrderStart: historyPanel.contentNavigationPanelOrderStart
             }
+        },
+        //! Sada: full-width level meter below the editor, shown when the
+        //! playback meter position is "Bottom"
+        DockPanel {
+            id: levelsPanel
+
+            objectName: pageModel.levelsPanelName()
+            title: qsTrc("appshell", "Levels")
+
+            navigationSection: root.navigationPanelSec(levelsPanel.location)
+
+            closable: false
+            floatable: false
+
+            height: 46
+            minimumHeight: 46
+            maximumHeight: 46
+
+            location: Location.Bottom
+
+            visible: false
+
+            LevelsPanel {
+                navigationSection: levelsPanel.navigationSection
+                navigationOrderStart: levelsPanel.contentNavigationPanelOrderStart
+            }
         }
     ]
 

@@ -9,6 +9,7 @@
         <file>qml/Audacity/Playback/toolbars/PlaybackMeterCustomisePopup.qml</file>
         <file>qml/Audacity/Playback/toolbars/PlaybackLevel.qml</file>
         <file>qml/Audacity/Playback/panels/PlaybackMeterPanel.qml</file>
+        <file>qml/Audacity/Playback/panels/LevelsPanel.qml</file>
         <file>qml/Audacity/Playback/dialogs/LoopRegionInOut.qml</file>
     </qresource>
 </RCC>

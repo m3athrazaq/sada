@@ -29,7 +29,7 @@ StyledPopupView {
 
         RadioOptionsGroup {
             Layout.fillWidth: true
-            Layout.preferredHeight: 92
+            Layout.preferredHeight: 124
 
             title: qsTrc("playback", "Position")
 
@@ -50,6 +50,10 @@ StyledPopupView {
                 {
                     label: qsTrc("playback", "Side bar (vertical)"),
                     value: PlaybackMeterPosition.SideBar
+                },
+                {
+                    label: qsTrc("playback", "Bottom (full width)"),
+                    value: PlaybackMeterPosition.Bottom
                 }
             ]
 

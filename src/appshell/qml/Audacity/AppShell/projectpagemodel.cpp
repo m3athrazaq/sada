@@ -53,11 +53,14 @@ void ProjectPageModel::updatePlaybackMeterVisibility()
     });
 
     if (it != toolConfig.items.end()) {
+        const auto position = playbackUiState()->playbackMeterPosition();
         const bool meterPanelVisible = it->show
-                                       && (playbackUiState()->playbackMeterPosition()
-                                           == playback::PlaybackMeterPosition::MeterPosition::SideBar);
-        muse::async::Async::call(this, [this, meterPanelVisible]() {
+                                       && (position == playback::PlaybackMeterPosition::MeterPosition::SideBar);
+        const bool levelsPanelVisible = it->show
+                                        && (position == playback::PlaybackMeterPosition::MeterPosition::Bottom);
+        muse::async::Async::call(this, [this, meterPanelVisible, levelsPanelVisible]() {
             dispatcher()->dispatch("dock-set-open", ActionData::make_arg2<QString, bool>(playbackMeterPanelName(), meterPanelVisible));
+            dispatcher()->dispatch("dock-set-open", ActionData::make_arg2<QString, bool>(levelsPanelName(), levelsPanelVisible));
         });
     }
 }
@@ -90,6 +93,11 @@ QString ProjectPageModel::tracksPanelName() const
 QString ProjectPageModel::historyPanelName() const
 {
     return HISTORY_PANEL_NAME;
+}
+
+QString ProjectPageModel::levelsPanelName() const
+{
+    return LEVELS_PANEL_NAME;
 }
 
 QString ProjectPageModel::playbackMeterPanelName() const

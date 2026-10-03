@@ -316,8 +316,8 @@ void PlaybackToolBarModel::updateActions()
         }
 
         if (citem.intent == PLAYBACK_LEVEL_QUERY.toString()) {
-            if (playbackUiState()->playbackMeterPosition() == playback::PlaybackMeterPosition::MeterPosition::SideBar) {
-                // Skip playback meter item if it is set to be displayed in the sidebar
+            if (playbackUiState()->playbackMeterPosition() != playback::PlaybackMeterPosition::MeterPosition::TopBar) {
+                // Skip playback meter item if it is set to be displayed in the sidebar or the bottom levels panel
                 continue;
             }
         }

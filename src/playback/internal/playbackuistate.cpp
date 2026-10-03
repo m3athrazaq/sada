@@ -16,14 +16,24 @@ void PlaybackUiState::init()
 
 PlaybackMeterPosition::MeterPosition PlaybackUiState::playbackMeterPosition() const
 {
-    return uiState()->uiItemState(PLAYBACK_METER_POSITION_KEY) == "1"
-           ? PlaybackMeterPosition::MeterPosition::SideBar
-           : PlaybackMeterPosition::MeterPosition::TopBar;
+    const QString value = uiState()->uiItemState(PLAYBACK_METER_POSITION_KEY);
+    if (value == "1") {
+        return PlaybackMeterPosition::MeterPosition::SideBar;
+    }
+    if (value == "2") {
+        return PlaybackMeterPosition::MeterPosition::Bottom;
+    }
+    return PlaybackMeterPosition::MeterPosition::TopBar;
 }
 
 void PlaybackUiState::setPlaybackMeterPosition(PlaybackMeterPosition::MeterPosition position)
 {
-    const QString value = position == PlaybackMeterPosition::MeterPosition::SideBar ? "1" : "0";
+    QString value = "0";
+    if (position == PlaybackMeterPosition::MeterPosition::SideBar) {
+        value = "1";
+    } else if (position == PlaybackMeterPosition::MeterPosition::Bottom) {
+        value = "2";
+    }
     if (uiState()->uiItemState(PLAYBACK_METER_POSITION_KEY) == value) {
         return;
     }

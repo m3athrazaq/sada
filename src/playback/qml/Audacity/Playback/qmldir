@@ -10,5 +10,6 @@ PlaybackMeterCustomisePopup 1.0 toolbars/PlaybackMeterCustomisePopup.qml
 PlaybackLevel 1.0 toolbars/PlaybackLevel.qml
 
 PlaybackMeterPanel 1.0 panels/PlaybackMeterPanel.qml
+LevelsPanel 1.0 panels/LevelsPanel.qml
 
 LoopRegionInOut 1.0 dialogs/LoopRegionInOut.qml
