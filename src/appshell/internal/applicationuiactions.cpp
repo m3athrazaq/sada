@@ -67,7 +67,7 @@ const UiActionList ApplicationUiActions::m_actions = {
              au::context::UiCtxAny,
              au::context::CTX_ANY,
              //: Action title: shown as a menu item or a button label; keep it short
-             TranslatableString("action", "&About Audacity…")
+             TranslatableString("action", "&About Sada…")
              ),
     UiAction("about-qt",
              au::context::UiCtxAny,

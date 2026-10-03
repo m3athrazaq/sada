@@ -267,8 +267,14 @@ AboutModel::AboutModel(QObject* parent)
 
 QString AboutModel::appVersion() const
 {
-    const QString version = QString::fromStdString(
+    const QString baseVersion = QString::fromStdString(
         (application()->fullVersion().toString() + u"." + application()->build()).toStdString());
+#ifdef SADA_VERSION
+    const QString version = muse::qtrc("appshell/about", "%1 (based on Audacity %2)")
+                            .arg(QString::fromUtf8(SADA_VERSION), baseVersion);
+#else
+    const QString version = baseVersion;
+#endif
     return application()->unstable()
            ? muse::qtrc("appshell/about", "Unstable prerelease for %1").arg(version)
            : version;
@@ -282,7 +288,7 @@ QString AboutModel::appRevision() const
 QVariantMap AboutModel::appUrl() const
 {
     QUrl url(QString::fromStdString(configuration()->appUrl()));
-    return makeUrl(url, false);
+    return makeUrl(url, true);
 }
 
 QVariantMap AboutModel::forumUrl() const
@@ -306,7 +312,7 @@ QVariantMap AboutModel::privacyPolicyUrl() const
 void AboutModel::copyRevisionToClipboard() const
 {
     QApplication::clipboard()->setText(
-        QString("OS: %1, Arch.: %2, Audacity version (%3-bit): %4-%5, revision: github-audacity-audacity-%6")
+        QString("OS: %1, Arch.: %2, Sada (Audacity base version) (%3-bit): %4-%5, revision: github-m3athrazaq-sada-%6")
         .arg(QSysInfo::prettyProductName()
              + ((QSysInfo::productType() == "windows" && (QSysInfo::productVersion() == "10" || QSysInfo::productVersion() == "11"))
                 ? " or later" : ""))

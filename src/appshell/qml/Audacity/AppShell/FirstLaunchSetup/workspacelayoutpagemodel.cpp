@@ -137,7 +137,7 @@ QString WorkspaceLayoutPageModel::navigationAccessibleName()
 
 QString WorkspaceLayoutPageModel::navigationAccessibleDescription()
 {
-    return qtrc("appshell/gettingstarted", "Choose your preferred workspace layout for the Audacity interface");
+    return qtrc("appshell/gettingstarted", "Choose your preferred workspace layout for the Sada interface");
 }
 
 QString WorkspaceLayoutPageModel::pageAccessibleDescription()

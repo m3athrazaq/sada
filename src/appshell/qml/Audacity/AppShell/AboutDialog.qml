@@ -12,7 +12,7 @@ import Audacity.AppShell
 StyledDialogView {
     id: root
 
-    title: qsTrc("appshell/about", "About Audacity")
+    title: qsTrc("appshell/about", "About Sada")
 
     contentHeight: 600
     contentWidth: 720
@@ -40,7 +40,7 @@ StyledDialogView {
             spacing: prv.tabButtonSpacing
 
             StyledTabButton {
-                text: qsTrc("appshell/about", "Audacity")
+                text: qsTrc("appshell/about", "Sada")
             }
 
             StyledTabButton {

@@ -25,7 +25,7 @@ ColumnLayout {
         readonly property int contentTextMargin: 12
         readonly property int contentTextSpacing: 8
 
-        readonly property string versionSubtitle: qsTrc("appshell/about", "Audacity the free, open source, cross-platform software for recording and editing sounds.")
+        readonly property string versionSubtitle: qsTrc("appshell/about", "Sada is a free, open source audio editor for recording and editing sound, based on Audacity.")
     }
 
     Image {
@@ -194,7 +194,7 @@ ColumnLayout {
                 StyledTextLabel {
                     text: {
                         let websiteUrl = root.model.appUrl()
-                        return qsTrc("appshell/about", "Audacity website: %1").arg('<a href="' + websiteUrl.url + '">' + websiteUrl.displayName + '</a>')
+                        return qsTrc("appshell/about", "Sada website: %1").arg('<a href="' + websiteUrl.url + '">' + websiteUrl.displayName + '</a>')
                     }
                     font: ui.theme.bodyFont
                 }
@@ -210,6 +210,11 @@ ColumnLayout {
 
                     StyledTextLabel {
                         text: qsTrc("appshell/about", "The name <b>Audacity</b> is a registered trademark.")
+                        font: ui.theme.bodyFont
+                    }
+
+                    StyledTextLabel {
+                        text: qsTrc("appshell/about", "Sada is an independent project based on Audacity. It is not affiliated with or endorsed by the Audacity Team or Muse Group.")
                         font: ui.theme.bodyFont
                     }
                 }

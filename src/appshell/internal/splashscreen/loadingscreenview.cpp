@@ -39,7 +39,7 @@ static constexpr QSize loadingScreenSize(800, 380);
 static const QColor messageColor("#99FFFFFF");
 static constexpr QRectF messageRect(loadingScreenSize.width() / 2, 269, 0, 0);
 
-static const QString website("www.audacityteam.org");
+static const QString website("github.com/m3athrazaq/sada");
 static constexpr QRectF versionRect(38, 322, 0, 0);
 
 static constexpr qreal versionNumberSpacing = 4.0;
@@ -94,7 +94,11 @@ void LoadingScreenView::draw(QPainter* painter)
 
     QRectF versionBoundingRect;
     painter->drawText(versionRect, Qt::AlignBottom | alignment | Qt::TextDontClip,
+#ifdef SADA_VERSION
+                      qtrc("appshell", "Version %1").arg(QString::fromUtf8(SADA_VERSION)),
+#else
                       qtrc("appshell", "Version %1").arg(application()->version().major()),
+#endif
                       &versionBoundingRect);
 
     // Draw website URL

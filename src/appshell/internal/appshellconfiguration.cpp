@@ -45,7 +45,9 @@ static const Settings::Key WELCOME_DIALOG_LAST_SHOWN_INDEX(module_name, "applica
 static const Settings::Key STARTUP_MODE_TYPE(module_name, "application/startup/modeStart");
 static const Settings::Key STARTUP_SCORE_PATH(module_name, "application/startup/startScore");
 
-static const std::string AUDACITY_URL("https://www.audacityteam.org/");
+// Sada: the project page; manual, support and forum links keep pointing to Audacity's
+// documentation, which describes the editing features Sada is built on.
+static const std::string AUDACITY_URL("https://github.com/m3athrazaq/sada");
 static const std::string AUDACITY_MANUAL_URL("https://manual.audacityteam.org/");
 static const std::string AUDACITY_SUPPORT_URL("https://support.audacityteam.org/");
 static const std::string AUDACITY_FORUM_URL("https://forum.audacityteam.org/");
