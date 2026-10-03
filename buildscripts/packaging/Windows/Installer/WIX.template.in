@@ -21,8 +21,8 @@
 <?endif?>
 
 <!-- Primary (project) and the media "open with" helper. -->
-<?define Aup4ProgId="Audacity.aup4.$(var.ProgIdSuffix)"?>
-<?define MediaProgId="Audacity.Media.$(var.ProgIdSuffix)"?>
+<?define Aup4ProgId="Sada.aup4.$(var.ProgIdSuffix)"?>
+<?define MediaProgId="Sada.Media.$(var.ProgIdSuffix)"?>
 
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" RequiredVersion="3.6.3303.0">
 
@@ -63,8 +63,8 @@
         <WixVariable Id="WixUIDialogBmp" Value="$(var.CPACK_WIX_UI_DIALOG)" />
         <?endif?>
 
-        <Property Id='ARPHELPLINK'>https://audacityteam.org</Property>
-        <Property Id='ARPURLINFOABOUT'>https://audacityteam.org</Property>
+        <Property Id='ARPHELPLINK'>https://github.com/m3athrazaq/sada</Property>
+        <Property Id='ARPURLINFOABOUT'>https://github.com/m3athrazaq/sada</Property>
         <!-- Properties from CMake -->
         <?include "properties.wxi"?>
 
@@ -81,35 +81,6 @@
         <Property Id="WixShellExecTarget" Value="[#CM_FP_bin.$(var.ExeName)]" />
         <CustomAction Id="LaunchApplication" BinaryKey="WixCA" DllEntry="WixShellExec" Impersonate="yes" />
 
-        <!-- Background updates: a scheduled task running as SYSTEM installs the package
-             the application downloads, since an ordinary user cannot write to Program
-             Files. cert-from is this package, so the task accepts only updates signed
-             with the same key, chaining to the same root; upgrade-code and
-             product-version are what it is, so the task accepts only later versions of
-             this same product and nothing else that key ever signed. Failures are
-             ignored - without the task the application falls back to asking the user to
-             run the installer.
-             The trailing "\" doubles the one INSTALL_ROOT ends with, so that
-             CommandLineToArgvW does not read it as an escaped quote. -->
-        <CustomAction Id="SetRegisterUpdateTask" Property="RegisterUpdateTask"
-            Value="&quot;[INSTALL_ROOT]bin\museupdater.exe&quot; --register-task --app-id &quot;$(var.MUSE_EXECUTABLE_NAME)&quot; --app-exe &quot;bin\$(var.ExeName)&quot; --install-dir &quot;[INSTALL_ROOT]\&quot; --package-type msi --install-args &quot;INSTALL_ROOT={install-dir}&quot; --upgrade-code &quot;[UpgradeCode]&quot; --product-version &quot;[ProductVersion]&quot; --cert-from &quot;[OriginalDatabase]&quot;" />
-        <CustomAction Id="RegisterUpdateTask" BinaryKey="WixCA" DllEntry="WixQuietExec"
-            Execute="deferred" Impersonate="no" Return="ignore" />
-
-        <CustomAction Id="SetUnregisterUpdateTask" Property="UnregisterUpdateTask"
-            Value="&quot;[INSTALL_ROOT]bin\museupdater.exe&quot; --unregister-task --app-id &quot;$(var.MUSE_EXECUTABLE_NAME)&quot;" />
-        <CustomAction Id="UnregisterUpdateTask" BinaryKey="WixCA" DllEntry="WixQuietExec"
-            Execute="deferred" Impersonate="no" Return="ignore" />
-
-        <InstallExecuteSequence>
-            <Custom Action="SetRegisterUpdateTask" Before="RegisterUpdateTask">NOT REMOVE</Custom>
-            <Custom Action="RegisterUpdateTask" After="InstallFiles">NOT REMOVE</Custom>
-            <!-- NOT UPGRADINGPRODUCTCODE: on a major upgrade the removal of the previous
-                 version would delete the staged package msiexec is reading from
-                 (1316 -> 1603 -> rollback), and the new version re-registers anyway. -->
-            <Custom Action="SetUnregisterUpdateTask" Before="UnregisterUpdateTask">REMOVE="ALL" AND NOT UPGRADINGPRODUCTCODE</Custom>
-            <Custom Action="UnregisterUpdateTask" Before="RemoveFiles">REMOVE="ALL" AND NOT UPGRADINGPRODUCTCODE</Custom>
-        </InstallExecuteSequence>
 
         <Component Id="RegisterTypes" Directory="TARGETDIR" Guid="*">
             <!-- In order to work with Default Programs -->
@@ -171,20 +142,16 @@
 
             <!-- Add main project file type association -->
             <RegistryKey Root="$(var.RegistryRoot)" Key="SOFTWARE\Classes\$(var.Aup4ProgId)" ForceDeleteOnUninstall="yes">
-                <RegistryValue Value="Audacity File" Type="string" />
+                <RegistryValue Value="Sada project" Type="string" />
                 <RegistryValue Key="DefaultIcon" Value="$(var.DocIcon)" Type="string" />
                 <RegistryValue Key="shell\open\command" Value="&quot;$(var.ExePath)&quot; &quot;%1&quot;" Type="string" />
             </RegistryKey>
-            <RegistryValue Root="$(var.RegistryRoot)" Key="SOFTWARE\Classes\Audacity.aup4\CurVer" Value="$(var.Aup4ProgId)" Type="string" />
-
-            <RegistryKey Root="$(var.RegistryRoot)" Key="SOFTWARE\Classes\.aup4">
-                <RegistryValue Value="$(var.Aup4ProgId)" Type="string" />
-                <RegistryValue Name="Content Type" Value="application/x-audacity" Type="string" />
-            </RegistryKey>
+            <!-- Sada: offer itself for .aup4 via "Open with" without replacing the default handler -->
+            <RegistryValue Root="$(var.RegistryRoot)" Key="SOFTWARE\Classes\.aup4\OpenWithProgids" Name="$(var.Aup4ProgId)" Value="" Type="string" />
 
             <!-- Add importable file types association -->
             <RegistryKey Root="$(var.RegistryRoot)" Key="SOFTWARE\Classes\$(var.MediaProgId)" ForceDeleteOnUninstall="yes">
-                <RegistryValue Value="Audacity audio file" Type="string" />
+                <RegistryValue Value="Audio file (Sada)" Type="string" />
                 <RegistryValue Key="DefaultIcon" Value="$(var.ExeIcon)" Type="string" />
                 <RegistryValue Key="shell\open\command" Value="&quot;$(var.ExePath)&quot; &quot;%1&quot;" Type="string" />
             </RegistryKey>

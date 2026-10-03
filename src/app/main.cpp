@@ -93,9 +93,9 @@ int main(int argc, char** argv)
 
     const char* appName;
 #ifdef MUSE_APP_UNSTABLE
-    appName  = "Audacity4Development";
+    appName  = "SadaDevelopment";
 #else
-    appName  = "Audacity4";
+    appName  = "Sada";
 #endif
 
 #ifdef Q_OS_WIN
@@ -110,8 +110,8 @@ int main(int argc, char** argv)
     QGuiApplication::styleHints()->setMousePressAndHoldInterval(250);
 
     QCoreApplication::setApplicationName(appName);
-    QCoreApplication::setOrganizationName("Audacity");
-    QCoreApplication::setOrganizationDomain("audacityteam.org");
+    QCoreApplication::setOrganizationName("Sada");
+    QCoreApplication::setOrganizationDomain("m3athrazaq.github.io");
     QCoreApplication::setApplicationVersion(MUSE_APP_VERSION);
 
 #if !defined(Q_OS_WIN) && !defined(Q_OS_DARWIN) && !defined(Q_OS_WASM)
@@ -119,7 +119,7 @@ int main(int argc, char** argv)
 #define MUSE_APP_INSTALL_SUFFIX ""
 #endif
     // Any OS that uses Freedesktop.org Desktop Entry Specification (e.g. Linux, BSD)
-    QGuiApplication::setDesktopFileName("org.audacityteam.Audacity" MUSE_APP_INSTALL_SUFFIX ".desktop");
+    QGuiApplication::setDesktopFileName("io.github.m3athrazaq.Sada" MUSE_APP_INSTALL_SUFFIX ".desktop");
 #endif
 
     // Force the 8-bit text encoding to UTF-8. This is the default encoding on all supported platforms except for MSVC under Windows, which
@@ -195,7 +195,7 @@ int main(int argc, char** argv)
                 forwardedArgs.append(QString::fromUtf8(argvFinal[i]));
             }
             if (muse::mi::activateExistingInstance(QString::fromLatin1(appName), forwardedArgs)) {
-                LOGI() << "existing Audacity instance activated";
+                LOGI() << "existing Sada instance activated";
                 LOGI() << "exiting";
                 return 0;
             }

@@ -5,6 +5,7 @@
 set(TARGET builtin-workspaces)
 
 set(WORKSPACE_FILES
+    Sada.mws
     Classic.mws
     Music.mws
     Modern.mws

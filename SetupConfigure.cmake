@@ -65,16 +65,21 @@ if(BUILD_MODE MATCHES "RELEASE")
     set(AU4_ALLOW_UPDATE_ON_PRERELEASE OFF)
 endif()
 
-# Display version number and the release channel (unless it is a release) as the app title
-set(MUSE_APP_TITLE_VERSION "${MUSE_APP_TITLE} ${MUSE_APP_VERSION_MAJOR}.${MUSE_APP_VERSION_MINOR}")
+# Display the Sada product version and the release channel (unless it is a release) as the app title
+set(MUSE_APP_TITLE_VERSION "${MUSE_APP_TITLE} ${SADA_VERSION_MAJOR}.${SADA_VERSION_MINOR}")
 
 if(NOT MUSE_APP_VERSION_LABEL STREQUAL "")
     string(APPEND MUSE_APP_TITLE_VERSION " ${MUSE_APP_VERSION_LABEL}")
 endif()
 
-if(NOT MUSE_APP_RELEASE_CHANNEL STREQUAL "stable")
+if(MUSE_APP_RELEASE_CHANNEL STREQUAL "testing")
+    string(APPEND MUSE_APP_TITLE_VERSION " beta")
+elseif(NOT MUSE_APP_RELEASE_CHANNEL STREQUAL "stable")
     string(APPEND MUSE_APP_TITLE_VERSION " ${MUSE_APP_RELEASE_CHANNEL}")
 endif()
+
+add_compile_definitions(SADA_VERSION="${SADA_VERSION}")
+add_compile_definitions(SADA_BASE_VERSION_TEXT="${SADA_BASE_VERSION_TEXT}")
 
 add_compile_definitions(AU4_APP_TITLE_VERSION="${MUSE_APP_TITLE_VERSION}")
 

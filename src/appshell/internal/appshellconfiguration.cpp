@@ -53,6 +53,10 @@ static const std::string AUDACITY_CONTRIBUTE_URL("https://support.audacityteam.o
 
 static const Settings::Key SPLASH_SCREEN_VISIBLE_KEY(module_name, "ui/application/startup/showSplashScreen");
 
+// Sada: set once, the first time the app runs, so the dark theme becomes the starting
+// point without overriding a theme the user picks later.
+static const Settings::Key SADA_DEFAULT_THEME_APPLIED_KEY(module_name, "sada/defaultThemeApplied");
+
 static const muse::io::path_t SESSION_FILE("/session.json");
 static const std::string SESSION_RESOURCE_NAME("SESSION");
 
@@ -60,7 +64,8 @@ void AppShellConfiguration::init()
 {
     settings()->setDefaultValue(HAS_COMPLETED_FIRST_LAUNCH_SETUP, Val(false));
 
-    settings()->setDefaultValue(WELCOME_DIALOG_SHOW_ON_STARTUP_KEY, Val(true));
+    // Sada: the welcome dialog carries upstream Audacity announcements, so it is off by default
+    settings()->setDefaultValue(WELCOME_DIALOG_SHOW_ON_STARTUP_KEY, Val(false));
     settings()->valueChanged(WELCOME_DIALOG_SHOW_ON_STARTUP_KEY).onReceive(this, [this](const Val&) {
         m_welcomeDialogShowOnStartupChanged.notify();
     });
@@ -72,6 +77,12 @@ void AppShellConfiguration::init()
     // settings()->setDefaultValue(STARTUP_SCORE_PATH, Val(projectConfiguration()->myFirstProjectPath().toStdString()));
 
     fileSystem()->makePath(sessionDataPath());
+
+    settings()->setDefaultValue(SADA_DEFAULT_THEME_APPLIED_KEY, Val(false));
+    if (!settings()->value(SADA_DEFAULT_THEME_APPLIED_KEY).toBool()) {
+        uiConfiguration()->setCurrentTheme(muse::ui::DARK_THEME_CODE);
+        settings()->setSharedValue(SADA_DEFAULT_THEME_APPLIED_KEY, Val(true));
+    }
 }
 
 bool AppShellConfiguration::hasCompletedFirstLaunchSetup() const

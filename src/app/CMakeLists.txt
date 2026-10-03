@@ -14,7 +14,7 @@ set(EXECUTABLE_NAME audacity)
 include(GetPlatformInfo)
 
 if (OS_IS_WIN)
-    set(APP_OUTPUT_NAME ${MUSE_APP_NAME}${MUSE_APP_VERSION_MAJOR})
+    set(APP_OUTPUT_NAME ${MUSE_APP_NAME}) # Sada.exe
 
     include(GetCompilerInfo)
 

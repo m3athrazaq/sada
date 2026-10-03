@@ -239,6 +239,9 @@ DockPage {
 
             dropDestinations: [root.toolBarTopDropDestination, root.toolBarBottomDropDestination]
 
+            //! Sada: transport and tools sit below the editor by default
+            location: Location.Bottom
+
             minimumWidth: 300
             thickness: 48 /* see PlaybackToolBar rowHeight */
             resizable: true
@@ -437,8 +440,8 @@ DockPage {
             groupName: root.verticalPanelsGroup
             location: Location.Right
 
-            //! NOTE: hidden by default
-            visible: false
+            //! Sada: shown by default
+            visible: true
 
             dropDestinations: root.verticalPanelDropDestinations
 

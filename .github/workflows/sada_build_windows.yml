@@ -1,0 +1,147 @@
+name: 'Sada: Build Windows'
+
+# Builds Sada for Windows x64 on every push to master (and on version tags).
+# Outputs:
+#   - "Sada-portable-win64"   : the ready-to-run install folder (Sada.exe and its files)
+#   - "Sada-packages-win64"   : zip archive and, when packaging succeeds, the MSI installer
+# A short status and the tail of the build log are also pushed to the `ci-logs` branch,
+# so build results can be read with plain git.
+
+on:
+  push:
+    branches:
+    - master
+    tags:
+    - 'v*'
+  workflow_dispatch:
+
+concurrency:
+  group: sada_build_windows-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  CI_DIR: buildscripts/ci
+  BUILD_MODE: testing_build
+
+jobs:
+  build_windows:
+    runs-on: windows-2022
+    timeout-minutes: 350
+    steps:
+    - name: Clone repository
+      uses: actions/checkout@v7
+      with:
+        fetch-depth: 3
+        submodules: recursive
+
+    - name: Report start
+      shell: bash
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        bash ./buildscripts/ci/sada/publish_ci_log.sh started
+
+    - name: Configure workflow
+      shell: bash
+      run: |
+        cmake -DEVENT=${{ github.event_name }} \
+              -DBUILD_MODE=${BUILD_MODE} \
+              -DARTIFACT_INFO="Win_x86_64" \
+              -P ${CI_DIR}/common/ci_configure.cmake
+        echo "BUILD_NUMBER: $(cat ./build.artifacts/env/build_number.env)"
+
+    - name: Restore ccache files
+      id: restore-ccache
+      uses: actions/cache/restore@v6
+      with:
+        path: ${{ github.workspace }}/.ccache
+        key: ${{runner.os}}-${{runner.arch}}-sada-ccache-
+        restore-keys: ${{runner.os}}-${{runner.arch}}-sada-ccache-
+
+    - name: Setup ccache
+      run: |
+        choco install -y ccache
+        bash ./muse/buildscripts/ci/tools/setup_ccache_config.sh
+
+    - name: Register msvc problem matcher
+      run: echo "::add-matcher::.github/problem_matchers/msvc.json"
+
+    - name: Install Qt
+      uses: jurplel/install-qt-action@v4
+      with:
+        version: '6.10.1'
+        host: 'windows'
+        target: 'desktop'
+        arch: 'win64_msvc2022_64'
+        modules: 'qt5compat qtnetworkauth qtshadertools qtwebsockets qtgraphs qtquick3d'
+        cache: true
+
+    - name: Setup environment
+      shell: bash
+      run: |
+        cmake -P ${CI_DIR}/windows/setup.cmake
+
+    - name: Build
+      shell: bash
+      run: |
+        source /c/build_tools/environment.sh
+        set -o pipefail
+        cmake -DCRASH_REPORT_URL="''" -DAUDIOPLUGINS_CRASHREPORT_URL="''" -P ${CI_DIR}/windows/ci_build.cmake 2>&1 | tee "$GITHUB_WORKSPACE/build.log"
+
+    - name: Show ccache stats
+      if: always()
+      run: |
+        ccache -sv
+
+    - name: Upload portable build
+      uses: actions/upload-artifact@v7
+      with:
+        name: Sada-portable-win64
+        path: ./build.install/
+        retention-days: 30
+
+    - name: Package
+      continue-on-error: true
+      shell: bash
+      run: |
+        set -o pipefail
+        cmake -DPACKARCH=x86_64 -P ${CI_DIR}/windows/package.cmake 2>&1 | tee "$GITHUB_WORKSPACE/package.log"
+
+    - name: Upload packages
+      if: always()
+      uses: actions/upload-artifact@v7
+      with:
+        name: Sada-packages-win64
+        path: |
+          ./build.artifacts/*.zip
+          ./build.artifacts/*.msi
+          ./build.artifacts/logs/
+        if-no-files-found: ignore
+        retention-days: 30
+
+    - name: Report result
+      if: always()
+      shell: bash
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        JOB_STATUS: ${{ job.status }}
+      run: |
+        bash ./buildscripts/ci/sada/publish_ci_log.sh "$JOB_STATUS"
+
+    - name: Prepare ccache files for saving
+      id: prepare-save-ccache
+      if: always()
+      shell: bash
+      run: |
+        ccache --recompress 10
+        echo "CCACHE_TIMESTAMP=$(date -u +"%F-%T")" | tee -a $GITHUB_OUTPUT
+
+    - name: Save ccache files
+      if: always()
+      uses: actions/cache/save@v6
+      with:
+        key: ${{ steps.restore-ccache.outputs.cache-primary-key }}${{ steps.prepare-save-ccache.outputs.CCACHE_TIMESTAMP }}
+        path: ${{ github.workspace }}/.ccache

@@ -30,7 +30,7 @@
 #include "projectscene/iprojectsceneconfiguration.h"
 #include "iapplication.h"
 
-// #include "ui/iuiconfiguration.h"
+#include "ui/iuiconfiguration.h"
 // #include "project/iprojectconfiguration.h"
 // #include "playback/iplaybackconfiguration.h"
 // #include "languages/ilanguagesconfiguration.h"
@@ -44,6 +44,7 @@ class AppShellConfiguration : public IAppShellConfiguration, public muse::Contex
     muse::GlobalInject<muse::io::IFileSystem> fileSystem;
     muse::GlobalInject<projectscene::IProjectSceneConfiguration> projectSceneConfiguration;
     muse::GlobalInject<muse::IApplication> application;
+    muse::GlobalInject<muse::ui::IUiConfiguration> uiConfiguration;
 
 public:
     AppShellConfiguration(const muse::modularity::ContextPtr& iocCtx)

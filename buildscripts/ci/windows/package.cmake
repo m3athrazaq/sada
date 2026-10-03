@@ -14,7 +14,8 @@ set(BUILD_NUMBER   "" CACHE STRING "Nightly build number")
 set(BUILD_BRANCH   "" CACHE STRING "Nightly branch")
 set(BUILD_REVISION "" CACHE STRING "Nightly revision (short SHA)")
 
-set(UPGRADE_UUID "11111111-1111-1111-1111-111111111111" CACHE STRING "WiX Upgrade GUID")
+# Sada's own MSI UpgradeCode, so a Sada install never replaces an Audacity install.
+set(UPGRADE_UUID "A17C3F32-89D1-439F-888A-6BC71742E9A9" CACHE STRING "WiX Upgrade GUID")
 
 if (NOT BUILD_MODE)
   file (STRINGS "${ARTIFACTS_DIR}/env/build_mode.env" BUILD_MODE)
@@ -87,26 +88,28 @@ endif()
 
 file(MAKE_DIRECTORY "${ARTIFACTS_DIR}")
 
-# PACK 7z
-message(STATUS "Start 7z packing...")
-set(_archive_name "Audacity-${BUILD_VERSION}-${PACKARCH}")
+# PACK ZIP (portable; opens with the built-in Windows extractor)
+include(${CMAKE_CURRENT_LIST_DIR}/../../../version.cmake)
+file (STRINGS "${ARTIFACTS_DIR}/env/build_number.env" _sada_build_number)
+message(STATUS "Start zip packing...")
+set(_archive_name "Sada-${SADA_VERSION}-build${_sada_build_number}-win64")
 set(_archive_stage "${BUILD_DIR}/archive")
 set(_archive_root "${_archive_stage}/${_archive_name}")
 file(REMOVE_RECURSE "${_archive_root}")
 file(MAKE_DIRECTORY "${_archive_root}")
 file(COPY "${INSTALL_DIR}/" DESTINATION "${_archive_root}")
-get_filename_component(_archive_path "${ARTIFACTS_DIR}/${_archive_name}.7z" ABSOLUTE)
+get_filename_component(_archive_path "${ARTIFACTS_DIR}/${_archive_name}.zip" ABSOLUTE)
 execute_process(
-  COMMAND "${CMAKE_COMMAND}" -E tar cf "${_archive_path}" --format=7zip "${_archive_name}"
+  COMMAND "${CMAKE_COMMAND}" -E tar cf "${_archive_path}" --format=zip "${_archive_name}"
   WORKING_DIRECTORY "${_archive_stage}"
   RESULT_VARIABLE _archive_rc
 )
 if(NOT _archive_rc EQUAL 0)
-  message(FATAL_ERROR "7z packaging failed (exit ${_archive_rc})")
+  message(FATAL_ERROR "zip packaging failed (exit ${_archive_rc})")
 endif()
 file(REMOVE_RECURSE "${_archive_root}")
 
-message(STATUS "Finished 7z packing")
+message(STATUS "Finished zip packing")
 
 # PACK MSI
 if(PACK_TYPE STREQUAL "msi")
@@ -195,12 +198,12 @@ if(PACK_TYPE STREQUAL "msi")
 
   if(BUILD_MODE STREQUAL "nightly_build")
     if(BUILD_NUMBER AND BUILD_BRANCH AND BUILD_REVISION)
-      set(ARTIFACT_NAME "Audacity-Nightly-${BUILD_NUMBER}-${BUILD_BRANCH}-${BUILD_REVISION}-${PACKARCH}.msi")
+      set(ARTIFACT_NAME "Sada-Nightly-${BUILD_NUMBER}-${BUILD_BRANCH}-${BUILD_REVISION}-${PACKARCH}.msi")
     else()
-      set(ARTIFACT_NAME "Audacity-${BUILD_VERSION}-${PACKARCH}.msi")
+      set(ARTIFACT_NAME "Sada-${SADA_VERSION}-build${_sada_build_number}-win64.msi")
     endif()
   else()
-    set(ARTIFACT_NAME "Audacity-${BUILD_VERSION}-${PACKARCH}.msi")
+    set(ARTIFACT_NAME "Sada-${SADA_VERSION}-build${_sada_build_number}-win64.msi")
   endif()
 
   set(ARTIFACT_PATH "${ARTIFACTS_DIR}/${ARTIFACT_NAME}")

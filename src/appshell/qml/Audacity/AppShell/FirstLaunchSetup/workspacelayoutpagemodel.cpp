@@ -29,6 +29,17 @@ void WorkspaceLayoutPageModel::load()
     }
 #endif
 
+    WorkspaceInfo sada;
+    sada.m_code = "Sada";
+    sada.m_title = qtrc("appshell/gettingstarted", "Sada");
+    sada.m_description = qtrc("appshell/gettingstarted", "Docked panels, transport below the editor and pro-editor shortcuts");
+#ifdef MUSE_MODULE_WORKSPACE
+    sada.m_selected = (currentWorkspaceName == "Sada");
+#else
+    sada.m_selected = true; // Default fallback
+#endif
+    m_workspaces.append(sada);
+
     WorkspaceInfo modern;
     modern.m_code = "Modern";
     modern.m_title = qtrc("appshell/gettingstarted", "Modern");
@@ -36,7 +47,7 @@ void WorkspaceLayoutPageModel::load()
 #ifdef MUSE_MODULE_WORKSPACE
     modern.m_selected = (currentWorkspaceName == "Modern");
 #else
-    modern.selected = true; // Default fallback
+    modern.m_selected = false; // Default fallback
 #endif
     m_workspaces.append(modern);
 
@@ -47,7 +58,7 @@ void WorkspaceLayoutPageModel::load()
 #ifdef MUSE_MODULE_WORKSPACE
     classic.m_selected = (currentWorkspaceName == "Classic");
 #else
-    classic.selected = false; // Default fallback
+    classic.m_selected = false; // Default fallback
 #endif
     m_workspaces.append(classic);
 

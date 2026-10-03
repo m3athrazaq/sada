@@ -302,14 +302,6 @@
         <key>sel-cursor-to-next-clip-boundary</key>
     </SC>
     <SC>
-        <key>sel-prev-clip</key>
-        <seq>Alt+,</seq>
-    </SC>
-    <SC>
-        <key>sel-next-clip</key>
-        <seq>Alt+.</seq>
-    </SC>
-    <SC>
         <key>curs-prev-clip-boundary</key>
     </SC>
     <SC>
@@ -334,15 +326,10 @@
     </SC>
     <SC>
         <key>silence-audio-selection</key>
-        <seq>Ctrl+L</seq>
-    </SC>
-    <SC>
-        <key>trim</key>
-        <seq>Ctrl+T</seq>
     </SC>
     <SC>
         <key>split</key>
-        <seq>Ctrl+I</seq>
+        <seq>Ctrl+K</seq>
     </SC>
     <SC>
         <key>split-new</key>
@@ -358,7 +345,7 @@
     </SC>
     <SC>
         <key>split-tool</key>
-        <seq>S</seq>
+        <seq>R</seq>
     </SC>
     <SC>
         <key>preferences</key>
@@ -394,6 +381,7 @@
     </SC>
     <SC>
         <key>file-save-as</key>
+        <seq>Ctrl+Shift+S</seq>
     </SC>
     <SC>
         <key>file-save-copy</key>
@@ -411,6 +399,7 @@
     </SC>
     <SC>
         <key>project-import</key>
+        <seq>Ctrl+I</seq>
         <seq>Ctrl+Shift+I</seq>
     </SC>
     <SC>
@@ -476,6 +465,8 @@
     </SC>
     <SC>
         <key>label-add</key>
+        <seq>M</seq>
+        <seq>*</seq>
         <seq>Ctrl+B</seq>
     </SC>
     <SC>
@@ -549,10 +540,6 @@
     <SC>
         <key>select-all</key>
         <seq>Ctrl+A</seq>
-    </SC>
-    <SC>
-        <key>select-none</key>
-        <seq>Ctrl+Shift+A</seq>
     </SC>
     <SC>
         <key>select-all-tracks</key>
@@ -823,7 +810,6 @@
     </SC>
     <SC>
         <key>action://playback/play-selection</key>
-        <seq>Shift+Space</seq>
     </SC>
     <SC>
         <key>action://playback/pause</key>
@@ -834,14 +820,14 @@
     </SC>
     <SC>
         <key>action://record/start</key>
-        <seq>R</seq>
+        <seq>Shift+Space</seq>
     </SC>
     <SC>
         <key>action://record/lead-in-recording</key>
-        <seq>Shift+D</seq>
     </SC>
     <SC>
         <key>toggle-loop-region</key>
+        <seq>Ctrl+L</seq>
         <seq>L</seq>
     </SC>
     <SC>
@@ -925,6 +911,7 @@
     </SC>
     <SC>
         <key>zoom-in</key>
+        <seq>=</seq>
         <seq>Ctrl+=</seq>
     </SC>
     <SC>
@@ -933,6 +920,7 @@
     </SC>
     <SC>
         <key>zoom-out</key>
+        <seq>-</seq>
         <seq>Ctrl+-</seq>
     </SC>
     <SC>
@@ -945,6 +933,7 @@
     </SC>
     <SC>
         <key>zoom-to-fit-project</key>
+        <seq>\</seq>
         <seq>Ctrl+F</seq>
     </SC>
     <SC>
@@ -1159,10 +1148,12 @@
     <SC>
         <key>track-view-item-move-left</key>
         <seq>Ctrl+Left</seq>
+        <seq>Alt+,</seq>
     </SC>
     <SC>
         <key>track-view-item-move-right</key>
         <seq>Ctrl+Right</seq>
+        <seq>Alt+.</seq>
     </SC>
     <SC>
         <key>track-view-item-extend-left</key>
@@ -1187,5 +1178,21 @@
     <SC>
         <key>track-view-item-move-down</key>
         <seq>Ctrl+Down</seq>
+    </SC>
+    <SC>
+        <key>snap</key>
+        <seq>S</seq>
+    </SC>
+    <SC>
+        <key>clear-selection</key>
+        <seq>Ctrl+Shift+A</seq>
+    </SC>
+    <SC>
+        <key>trim-audio-outside-selection</key>
+        <seq>Ctrl+T</seq>
+    </SC>
+    <SC>
+        <key>action://trackedit/global-view-spectrogram</key>
+        <seq>Shift+D</seq>
     </SC>
 </Shortcuts>
