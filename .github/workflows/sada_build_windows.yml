@@ -1,9 +1,9 @@
 name: 'Sada: Build Windows'
 
-# Builds Sada for Windows x64 on every push to master (and on version tags).
-# Outputs:
-#   - "Sada-portable-win64"   : the ready-to-run install folder (Sada.exe and its files)
-#   - "Sada-packages-win64"   : zip archive and, when packaging succeeds, the MSI installer
+# Builds Sada for Windows x64 on every push to master.
+# Output: one artifact, "Sada-win64": the portable app folder (extract it and run bin/Sada.exe).
+# This repository is private, so artifacts count against the account's storage quota:
+# only this one artifact is uploaded, and it expires after two days.
 # A short status and the tail of the build log are also pushed to the `ci-logs` branch,
 # so build results can be read with plain git.
 
@@ -11,8 +11,6 @@ on:
   push:
     branches:
     - master
-    tags:
-    - 'v*'
   workflow_dispatch:
 
 concurrency:
@@ -99,46 +97,9 @@ jobs:
     - name: Upload portable build
       uses: actions/upload-artifact@v7
       with:
-        name: Sada-portable-win64
+        name: Sada-win64
         path: ./build.install/
-        retention-days: 30
-
-    - name: Package
-      continue-on-error: true
-      shell: bash
-      run: |
-        set -o pipefail
-        cmake -DPACKARCH=x86_64 -P ${CI_DIR}/windows/package.cmake 2>&1 | tee "$GITHUB_WORKSPACE/package.log"
-
-    - name: Upload packages
-      if: always()
-      uses: actions/upload-artifact@v7
-      with:
-        name: Sada-packages-win64
-        path: |
-          ./build.artifacts/*.zip
-          ./build.artifacts/*.msi
-          ./build.artifacts/logs/
-        if-no-files-found: ignore
-        retention-days: 30
-
-    - name: Publish pre-release (version tags only)
-      if: startsWith(github.ref, 'refs/tags/v')
-      shell: bash
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        TAG="${GITHUB_REF#refs/tags/}"
-        shopt -s nullglob
-        FILES=(build.artifacts/*.zip build.artifacts/*.msi)
-        if [ ${#FILES[@]} -eq 0 ]; then
-          echo "No packages to publish"; exit 1
-        fi
-        gh release create "$TAG" "${FILES[@]}" \
-          --repo "$GITHUB_REPOSITORY" \
-          --prerelease \
-          --title "Sada $TAG" \
-          --notes "Sada test build for Windows (x64). Unzip and run Sada.exe, or use the .msi installer. Sada is based on Audacity and distributed under the GNU GPL v3."
+        retention-days: 2
 
     - name: Report result
       if: always()
