@@ -1,0 +1,622 @@
+2026-10-03T02:21:20.113 | INFO  | main_thread     | GlobalModule::onPreInit | log path: C:/Users/runneradmin/AppData/Local/Sada/Sada/logs/Sada_261003_022120.log
+2026-10-03T02:21:20.113 | INFO  | main_thread     | GlobalModule::onPreInit | === Started Sada 4.0.0, build: 262760142 ===
+2026-10-03T02:21:20.116 | INFO  | main_thread     | LanguagesService::effectiveLanguageCode | System languages: QVariant(QStringList, QList("en-Latn-US", "en-US", "en-Latn", "en")) 
+2026-10-03T02:21:20.117 | ERROR | main_thread     | LanguagesService::doLoadLanguage | Could not find resource "audacity"  for language "en_US" 
+2026-10-03T02:21:20.118 | ERROR | main_thread     | LanguagesService::loadLanguage | Failed to load language "en_US" : [21] 
+2026-10-03T02:21:20.133 | ERROR | main_thread     | EffectConfigSettings::Load | failed read file: C:\Users\runneradmin\AppData\Roaming\Sada\Sada\pluginsettings.cfg, err: [406] An error occurred when reading from the file
+2026-10-03T02:21:20.152 | INFO  | main_thread     | DiagnosticsModule::onInit | success start crash handler
+2026-10-03T02:21:20.160 | INFO  | main_thread     | AbstractCloudService::readTokens | Could not find the tokens file: C:/Users/runneradmin/AppData/Local/Sada/Sada/audiocom_cred.dat
+2026-10-03T02:21:20.161 | ERROR | main_thread     | ExtensionsLoader::manifestPaths | failed scan files, err: [401] The file does not exist
+2026-10-03T02:21:20.161 | ERROR | main_thread     | ExtPluginsLoader::qmlsPaths | failed scan files, err: [401] The file does not exist, path: D:/a/sada/sada/build.install//plugins
+2026-10-03T02:21:20.161 | ERROR | main_thread     | ExtensionsConfiguration::extensionConfigs | failed read config data, err: [406] An error occurred when reading from the file, file: C:/Users/runneradmin/AppData/Local/Sada/Sada/plugins/plugins.json
+2026-10-03T02:21:20.166 | ERROR | main_thread     | ExtensionsLoader::manifestPaths | failed scan files, err: [401] The file does not exist
+2026-10-03T02:21:20.166 | ERROR | main_thread     | ExtPluginsLoader::qmlsPaths | failed scan files, err: [401] The file does not exist, path: D:/a/sada/sada/build.install//plugins
+2026-10-03T02:21:20.167 | ERROR | main_thread     | ExtensionsConfiguration::extensionConfigs | failed read config data, err: [406] An error occurred when reading from the file, file: C:/Users/runneradmin/AppData/Local/Sada/Sada/plugins/plugins.json
+2026-10-03T02:21:20.724 | ERROR | main_thread     | [AU3] wxDynamicLibrary::ReportError | Failed to load shared library 'avformat-63.dll' (error 126: The specified module could not be found.)
+2026-10-03T02:21:20.725 | ERROR | main_thread     | [AU3] wxDynamicLibrary::ReportError | Failed to load shared library 'avformat-62.dll' (error 126: The specified module could not be found.)
+2026-10-03T02:21:20.725 | ERROR | main_thread     | [AU3] wxDynamicLibrary::ReportError | Failed to load shared library 'avformat-61.dll' (error 126: The specified module could not be found.)
+2026-10-03T02:21:20.725 | ERROR | main_thread     | [AU3] wxDynamicLibrary::ReportError | Failed to load shared library 'avformat-60.dll' (error 126: The specified module could not be found.)
+2026-10-03T02:21:20.725 | ERROR | main_thread     | [AU3] wxDynamicLibrary::ReportError | Failed to load shared library 'avformat-59.dll' (error 126: The specified module could not be found.)
+2026-10-03T02:21:20.725 | ERROR | main_thread     | [AU3] wxDynamicLibrary::ReportError | Failed to load shared library 'avformat-58.dll' (error 126: The specified module could not be found.)
+2026-10-03T02:21:20.725 | ERROR | main_thread     | [AU3] wxDynamicLibrary::ReportError | Failed to load shared library 'avformat-57.dll' (error 126: The specified module could not be found.)
+2026-10-03T02:21:20.725 | ERROR | main_thread     | [AU3] wxDynamicLibrary::ReportError | Failed to load shared library 'avformat-55.dll' (error 126: The specified module could not be found.)
+2026-10-03T02:21:20.726 | ERROR | main_thread     | [AU3] wxDynamicLibrary::ReportError | Failed to load shared library 'avformat-63.dll' (error 126: The specified module could not be found.)
+2026-10-03T02:21:20.726 | ERROR | main_thread     | [AU3] wxDynamicLibrary::ReportError | Failed to load shared library 'avformat-62.dll' (error 126: The specified module could not be found.)
+2026-10-03T02:21:20.726 | ERROR | main_thread     | [AU3] wxDynamicLibrary::ReportError | Failed to load shared library 'avformat-61.dll' (error 126: The specified module could not be found.)
+2026-10-03T02:21:20.726 | ERROR | main_thread     | [AU3] wxDynamicLibrary::ReportError | Failed to load shared library 'avformat-60.dll' (error 126: The specified module could not be found.)
+2026-10-03T02:21:20.727 | ERROR | main_thread     | [AU3] wxDynamicLibrary::ReportError | Failed to load shared library 'avformat-59.dll' (error 126: The specified module could not be found.)
+2026-10-03T02:21:20.727 | ERROR | main_thread     | [AU3] wxDynamicLibrary::ReportError | Failed to load shared library 'avformat-58.dll' (error 126: The specified module could not be found.)
+2026-10-03T02:21:20.727 | ERROR | main_thread     | [AU3] wxDynamicLibrary::ReportError | Failed to load shared library 'avformat-57.dll' (error 126: The specified module could not be found.)
+2026-10-03T02:21:20.727 | ERROR | main_thread     | [AU3] wxDynamicLibrary::ReportError | Failed to load shared library 'avformat-55.dll' (error 126: The specified module could not be found.)
+2026-10-03T02:21:20.790 | INFO  | main_thread     | GuiApplication::setupGraphicsApi | Using graphics api: "d3d11" 
+2026-10-03T02:21:20.790 | INFO  | main_thread     | GuiApplication::setupGraphicsApi | Gui platform: "windows" 
+2026-10-03T02:21:20.790 | INFO  | main_thread     | GuiApplication::setupGraphicsApi | Detecting problems with graphics api
+2026-10-03T02:21:20.791 | INFO  | main_thread     | SingleInstanceListener::start | single-instance listener bound: "Sada" 
+2026-10-03T02:21:20.791 | INFO  | main_thread     | BaseApplication::setupNewContext | Creating new context with id: 1
+2026-10-03T02:21:20.860 | INFO  | main_thread     | ParameterExtractorRegistry::registerExtractor | Registered parameter extractor for family: 2
+2026-10-03T02:21:20.862 | ERROR | main_thread     | ExtensionsLoader::manifestPaths | failed scan files, err: [401] The file does not exist
+2026-10-03T02:21:20.863 | ERROR | main_thread     | ExtPluginsLoader::qmlsPaths | failed scan files, err: [401] The file does not exist, path: D:/a/sada/sada/build.install//plugins
+2026-10-03T02:21:20.863 | ERROR | main_thread     | ExtensionsConfiguration::extensionConfigs | failed read config data, err: [406] An error occurred when reading from the file, file: C:/Users/runneradmin/AppData/Local/Sada/Sada/plugins/plugins.json
+2026-10-03T02:21:20.866 | ERROR | main_thread     | [AU3] wxDynamicLibrary::ReportError | Failed to load shared library 'avformat-63.dll' (error 126: The specified module could not be found.)
+2026-10-03T02:21:20.867 | ERROR | main_thread     | [AU3] wxDynamicLibrary::ReportError | Failed to load shared library 'avformat-62.dll' (error 126: The specified module could not be found.)
+2026-10-03T02:21:20.867 | ERROR | main_thread     | [AU3] wxDynamicLibrary::ReportError | Failed to load shared library 'avformat-61.dll' (error 126: The specified module could not be found.)
+2026-10-03T02:21:20.867 | ERROR | main_thread     | [AU3] wxDynamicLibrary::ReportError | Failed to load shared library 'avformat-60.dll' (error 126: The specified module could not be found.)
+2026-10-03T02:21:20.867 | ERROR | main_thread     | [AU3] wxDynamicLibrary::ReportError | Failed to load shared library 'avformat-59.dll' (error 126: The specified module could not be found.)
+2026-10-03T02:21:20.867 | ERROR | main_thread     | [AU3] wxDynamicLibrary::ReportError | Failed to load shared library 'avformat-58.dll' (error 126: The specified module could not be found.)
+2026-10-03T02:21:20.867 | ERROR | main_thread     | [AU3] wxDynamicLibrary::ReportError | Failed to load shared library 'avformat-57.dll' (error 126: The specified module could not be found.)
+2026-10-03T02:21:20.867 | ERROR | main_thread     | [AU3] wxDynamicLibrary::ReportError | Failed to load shared library 'avformat-55.dll' (error 126: The specified module could not be found.)
+2026-10-03T02:21:20.868 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: accessibility-dev-show-tree
+2026-10-03T02:21:20.868 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: diagnostics-show
+2026-10-03T02:21:20.868 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: pinned-head
+2026-10-03T02:21:20.868 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: undo-history
+2026-10-03T02:21:20.868 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: mixer-board
+2026-10-03T02:21:20.868 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: edit-meta-data
+2026-10-03T02:21:20.868 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: timer-record
+2026-10-03T02:21:20.868 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: compare-audio
+2026-10-03T02:21:20.868 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: drag
+2026-10-03T02:21:20.868 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: get-info
+2026-10-03T02:21:20.868 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: help
+2026-10-03T02:21:20.868 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: import2
+2026-10-03T02:21:20.868 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: export2
+2026-10-03T02:21:20.868 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: message
+2026-10-03T02:21:20.868 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: open-project2
+2026-10-03T02:21:20.868 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: save-project2
+2026-10-03T02:21:20.868 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: get-preference
+2026-10-03T02:21:20.868 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-preference
+2026-10-03T02:21:20.868 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: select-time
+2026-10-03T02:21:20.868 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: select-frequencies
+2026-10-03T02:21:20.868 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: select-tracks
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: select
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-clip
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-envelope
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-label
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-project
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-track-status
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-track-audio
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-track-visuals
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-track
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: contrast-analyser
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-prev-clip-boundary-to-cursor
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-cursor-to-next-clip-boundary
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: curs-prev-clip-boundary
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: curs-next-clip-boundary
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: split-new
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: preferences
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: file-save-copy
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: import-labels
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: import-raw
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: export-mp3
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: export-wav
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: export-ogg
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: export-f-l-a-c
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: export-sel
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: quick-help
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: manual
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: about
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: edit-labels
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: add-label-playing
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: type-to-create-label
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: prev-frame
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: toggle
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: toggle-alt
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: manage-generators
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: manage-effects
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: get-more-effects
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: manage-analyzers
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: manage-tools
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: config-reset
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: simulate-recording-errors
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: detect-upstream-dropouts
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: write-journal
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-sync-lock-tracks
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-track-start-to-end
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-save
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-restore
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-cursor-stored-cursor
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: store-cursor-position
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: snap-to-off
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: snap-to-nearest
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: snap-to-prior
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-start
+2026-10-03T02:21:20.869 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-end
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-set-ext-left
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-set-ext-right
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: curs-track-start
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: curs-track-end
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: cursor-short-jump-left
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: cursor-short-jump-right
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: cursor-long-jump-left
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: cursor-long-jump-right
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: seek-left-short
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: seek-right-short
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: seek-left-long
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: seek-right-long
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: minutes-and-seconds
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: beats-and-measures
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: reset-toolbars
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: mix-and-render
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: mix-and-render-to-new-track
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: resample
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: pan-left
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: pan-right
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: pan-center
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: move-selection-with-tracks
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sync-lock
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: track-pan
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: track-pan-left
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: track-pan-right
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: track-gain
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: track-gain-inc
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: track-gain-dec
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: track-menu
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: track-close
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sound-activation-level
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sound-activation
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: overdub
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: s-w-playthrough
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-one-sec
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-to-selection
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-before-selection-start
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-after-selection-start
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-before-selection-end
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-after-selection-end
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-before-and-after-selection-start
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-before-and-after-selection-end
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-cut-preview
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: move-to-prev-label
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: move-to-next-label
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: zoom-normal
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: zoom-sel
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: fit-v
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: skip-sel-start
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: skip-sel-end
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-extra-menus
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-clipping
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-r-m-s
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-audio-setup-t-b
+2026-10-03T02:21:20.870 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-cut-copy-paste-t-b
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-transport-t-b
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-device-t-b
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: input-device
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: output-device
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: audio-host
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: input-channels
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-edit-t-b
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-record-meter-t-b
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-play-meter-t-b
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: output-gain
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: output-gain-inc
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: output-gain-dec
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: input-gain
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: input-gain-inc
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: input-gain-dec
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-selection-t-b
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-snapping-t-b
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-spectral-selection-t-b
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-time-signature-t-b
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-time-t-b
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-tools-t-b
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: select-tool
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: envelope-tool
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: draw-tool
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: multi-tool
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: prev-tool
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: next-tool
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-transcription-t-b
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-at-speed-looped
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-at-speed
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-at-speed-cut-preview
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-play-speed
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-speed-inc
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-speed-dec
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: next-higher-peak-frequency
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: next-lower-peak-frequency
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: render-pitch-and-speed
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: pitch-up
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: pitch-down
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: new-time-track
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: scrub
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: seek
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: toggle-scrub-ruler
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: keyboard-scrub-backwards
+2026-10-03T02:21:20.871 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: keyboard-scrub-forwards
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: accessibility-dev-show-tree
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: diagnostics-show
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: pinned-head
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: undo-history
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: mixer-board
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: edit-meta-data
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: timer-record
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: compare-audio
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: drag
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: get-info
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: help
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: import2
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: export2
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: message
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: open-project2
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: save-project2
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: get-preference
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-preference
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: select-time
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: select-frequencies
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: select-tracks
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: select
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-clip
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-envelope
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-label
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-project
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-track-status
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-track-audio
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-track-visuals
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-track
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: contrast-analyser
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-prev-clip-boundary-to-cursor
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-cursor-to-next-clip-boundary
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: curs-prev-clip-boundary
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: curs-next-clip-boundary
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: split-new
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: preferences
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: file-save-copy
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: import-labels
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: import-raw
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: export-mp3
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: export-wav
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: export-ogg
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: export-f-l-a-c
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: export-sel
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: quick-help
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: manual
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: about
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: edit-labels
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: add-label-playing
+2026-10-03T02:21:20.873 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: type-to-create-label
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: prev-frame
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: toggle
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: toggle-alt
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: manage-generators
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: manage-effects
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: get-more-effects
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: manage-analyzers
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: manage-tools
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: config-reset
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: simulate-recording-errors
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: detect-upstream-dropouts
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: write-journal
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-sync-lock-tracks
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-track-start-to-end
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-save
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-restore
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-cursor-stored-cursor
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: store-cursor-position
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: snap-to-off
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: snap-to-nearest
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: snap-to-prior
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-start
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-end
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-set-ext-left
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-set-ext-right
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: curs-track-start
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: curs-track-end
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: cursor-short-jump-left
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: cursor-short-jump-right
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: cursor-long-jump-left
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: cursor-long-jump-right
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: seek-left-short
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: seek-right-short
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: seek-left-long
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: seek-right-long
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: minutes-and-seconds
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: beats-and-measures
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: reset-toolbars
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: mix-and-render
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: mix-and-render-to-new-track
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: resample
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: pan-left
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: pan-right
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: pan-center
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: move-selection-with-tracks
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sync-lock
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: track-pan
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: track-pan-left
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: track-pan-right
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: track-gain
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: track-gain-inc
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: track-gain-dec
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: track-menu
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: track-close
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sound-activation-level
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sound-activation
+2026-10-03T02:21:20.874 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: overdub
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: s-w-playthrough
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-one-sec
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-to-selection
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-before-selection-start
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-after-selection-start
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-before-selection-end
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-after-selection-end
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-before-and-after-selection-start
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-before-and-after-selection-end
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-cut-preview
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: move-to-prev-label
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: move-to-next-label
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: zoom-normal
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: zoom-sel
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: fit-v
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: skip-sel-start
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: skip-sel-end
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-extra-menus
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-clipping
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-r-m-s
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-audio-setup-t-b
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-cut-copy-paste-t-b
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-transport-t-b
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-device-t-b
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: input-device
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: output-device
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: audio-host
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: input-channels
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-edit-t-b
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-record-meter-t-b
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-play-meter-t-b
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: output-gain
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: output-gain-inc
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: output-gain-dec
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: input-gain
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: input-gain-inc
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: input-gain-dec
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-selection-t-b
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-snapping-t-b
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-spectral-selection-t-b
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-time-signature-t-b
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-time-t-b
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-tools-t-b
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: select-tool
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: envelope-tool
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: draw-tool
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: multi-tool
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: prev-tool
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: next-tool
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-transcription-t-b
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-at-speed-looped
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-at-speed
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-at-speed-cut-preview
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-play-speed
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-speed-inc
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-speed-dec
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: next-higher-peak-frequency
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: next-lower-peak-frequency
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: render-pitch-and-speed
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: pitch-up
+2026-10-03T02:21:20.875 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: pitch-down
+2026-10-03T02:21:20.876 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: new-time-track
+2026-10-03T02:21:20.876 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: scrub
+2026-10-03T02:21:20.876 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: seek
+2026-10-03T02:21:20.876 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: toggle-scrub-ruler
+2026-10-03T02:21:20.876 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: keyboard-scrub-backwards
+2026-10-03T02:21:20.876 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: keyboard-scrub-forwards
+2026-10-03T02:21:21.564 | WARN  | main_thread     | Qt              | void __cdecl Layouting::ItemBoxContainer::setSize_recursive(class QSize,enum Layouting::ChildrenResizeStrategy) New size doesn't respect size constraints ; new= QSize(0, -32) ; min= QSize(0, 0) Layouting::ItemBoxContainer(0xa774bf0)
+2026-10-03T02:21:21.564 | WARN  | main_thread     | Qt              | void __cdecl Layouting::ItemBoxContainer::setSize_recursive(class QSize,enum Layouting::ChildrenResizeStrategy) New size doesn't respect size constraints ; new= QSize(0, -32) ; min= QSize(0, 0) Layouting::ItemBoxContainer(0xa774bf0)
+2026-10-03T02:21:21.567 | WARN  | main_thread     | Qt              | void __cdecl Layouting::ItemBoxContainer::setSize_recursive(class QSize,enum Layouting::ChildrenResizeStrategy) New size doesn't respect size constraints ; new= QSize(1044, -32) ; min= QSize(0, 0) Layouting::ItemBoxContainer(0xa774bf0)
+2026-10-03T02:21:21.596 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Muse/UiComponents/FlatButton.qml:220:5: QML Loader: Binding loop detected for property "itemImplicitWidth":
+qrc:/qt/qml/Muse/UiComponents/FlatButton.qml:226:9
+2026-10-03T02:21:21.597 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Muse/UiComponents/FlatButton.qml:220:5: QML Loader: Binding loop detected for property "itemImplicitWidth":
+qrc:/qt/qml/Muse/UiComponents/FlatButton.qml:226:9
+2026-10-03T02:21:21.598 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Muse/UiComponents/FlatButton.qml:220:5: QML Loader: Binding loop detected for property "itemImplicitWidth":
+qrc:/qt/qml/Muse/UiComponents/FlatButton.qml:226:9
+2026-10-03T02:21:21.599 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Muse/UiComponents/FlatButton.qml:220:5: QML Loader: Binding loop detected for property "itemImplicitWidth":
+qrc:/qt/qml/Muse/UiComponents/FlatButton.qml:226:9
+2026-10-03T02:21:21.600 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Muse/UiComponents/FlatButton.qml:220:5: QML Loader: Binding loop detected for property "itemImplicitWidth":
+qrc:/qt/qml/Muse/UiComponents/FlatButton.qml:226:9
+2026-10-03T02:21:21.601 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Muse/UiComponents/FlatButton.qml:220:5: QML Loader: Binding loop detected for property "itemImplicitWidth":
+qrc:/qt/qml/Muse/UiComponents/FlatButton.qml:226:9
+2026-10-03T02:21:21.601 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Muse/UiComponents/FlatButton.qml:220:5: QML Loader: Binding loop detected for property "itemImplicitWidth":
+qrc:/qt/qml/Muse/UiComponents/FlatButton.qml:226:9
+2026-10-03T02:21:21.602 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Muse/UiComponents/FlatButton.qml:220:5: QML Loader: Binding loop detected for property "itemImplicitWidth":
+qrc:/qt/qml/Muse/UiComponents/FlatButton.qml:226:9
+2026-10-03T02:21:21.603 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Muse/UiComponents/FlatButton.qml:220:5: QML Loader: Binding loop detected for property "itemImplicitWidth":
+qrc:/qt/qml/Muse/UiComponents/FlatButton.qml:226:9
+2026-10-03T02:21:21.604 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Muse/UiComponents/FlatButton.qml:220:5: QML Loader: Binding loop detected for property "itemImplicitWidth":
+qrc:/qt/qml/Muse/UiComponents/FlatButton.qml:226:9
+2026-10-03T02:21:21.605 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Muse/UiComponents/FlatButton.qml:220:5: QML Loader: Binding loop detected for property "itemImplicitWidth":
+qrc:/qt/qml/Muse/UiComponents/FlatButton.qml:226:9
+2026-10-03T02:21:21.610 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Audacity/AppShell/platform/AppMenuBar.qml:132:21: Unable to assign [undefined] to QFont
+2026-10-03T02:21:21.610 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Audacity/AppShell/platform/AppMenuBar.qml:132:21: Unable to assign [undefined] to QFont
+2026-10-03T02:21:21.610 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Audacity/AppShell/platform/AppMenuBar.qml:132:21: Unable to assign [undefined] to QFont
+2026-10-03T02:21:21.610 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Audacity/AppShell/platform/AppMenuBar.qml:132:21: Unable to assign [undefined] to QFont
+2026-10-03T02:21:21.610 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Audacity/AppShell/platform/AppMenuBar.qml:132:21: Unable to assign [undefined] to QFont
+2026-10-03T02:21:21.610 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Audacity/AppShell/platform/AppMenuBar.qml:132:21: Unable to assign [undefined] to QFont
+2026-10-03T02:21:21.610 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Audacity/AppShell/platform/AppMenuBar.qml:132:21: Unable to assign [undefined] to QFont
+2026-10-03T02:21:21.610 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Audacity/AppShell/platform/AppMenuBar.qml:132:21: Unable to assign [undefined] to QFont
+2026-10-03T02:21:21.610 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Audacity/AppShell/platform/AppMenuBar.qml:132:21: Unable to assign [undefined] to QFont
+2026-10-03T02:21:21.610 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Audacity/AppShell/platform/AppMenuBar.qml:132:21: Unable to assign [undefined] to QFont
+2026-10-03T02:21:21.610 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Audacity/AppShell/platform/AppMenuBar.qml:132:21: Unable to assign [undefined] to QFont
+2026-10-03T02:21:21.610 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Audacity/AppShell/platform/win/AppTitleBar.qml:89:13: Unable to assign [undefined] to QFont
+2026-10-03T02:21:21.766 | ERROR | main_thread     | AppShellConfiguration::sessionProjectsPaths | [401] The file does not exist
+2026-10-03T02:21:22.071 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Muse/Interactive/ProgressDialog.qml:62:9: QML ColumnLayout: Binding loop detected for property "height"
+2026-10-03T02:21:22.071 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Muse/Interactive/ProgressDialog.qml:62:9: QML ColumnLayout: Binding loop detected for property "height"
+2026-10-03T02:21:22.107 | ERROR | main_thread     | ExtensionsLoader::manifestPaths | failed scan files, err: [401] The file does not exist
+2026-10-03T02:21:22.107 | ERROR | main_thread     | ExtPluginsLoader::qmlsPaths | failed scan files, err: [401] The file does not exist, path: D:/a/sada/sada/build.install//plugins
+2026-10-03T02:21:22.108 | ERROR | main_thread     | ExtensionsConfiguration::extensionConfigs | failed read config data, err: [406] An error occurred when reading from the file, file: C:/Users/runneradmin/AppData/Local/Sada/Sada/plugins/plugins.json
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: accessibility-dev-show-tree
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: diagnostics-show
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: pinned-head
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: undo-history
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: mixer-board
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: edit-meta-data
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: timer-record
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: compare-audio
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: drag
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: get-info
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: help
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: import2
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: export2
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: message
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: open-project2
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: save-project2
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: get-preference
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-preference
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: select-time
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: select-frequencies
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: select-tracks
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: select
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-clip
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-envelope
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-label
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-project
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-track-status
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-track-audio
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-track-visuals
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-track
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: contrast-analyser
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-prev-clip-boundary-to-cursor
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-cursor-to-next-clip-boundary
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: curs-prev-clip-boundary
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: curs-next-clip-boundary
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: split-new
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: preferences
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: file-save-copy
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: import-labels
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: import-raw
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: export-mp3
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: export-wav
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: export-ogg
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: export-f-l-a-c
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: export-sel
+2026-10-03T02:21:22.348 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: quick-help
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: manual
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: about
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: edit-labels
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: add-label-playing
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: type-to-create-label
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: prev-frame
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: toggle
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: toggle-alt
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: manage-generators
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: manage-effects
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: get-more-effects
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: manage-analyzers
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: manage-tools
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: config-reset
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: simulate-recording-errors
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: detect-upstream-dropouts
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: write-journal
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-sync-lock-tracks
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-track-start-to-end
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-save
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-restore
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-cursor-stored-cursor
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: store-cursor-position
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: snap-to-off
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: snap-to-nearest
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: snap-to-prior
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-start
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-end
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-set-ext-left
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sel-set-ext-right
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: curs-track-start
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: curs-track-end
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: cursor-short-jump-left
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: cursor-short-jump-right
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: cursor-long-jump-left
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: cursor-long-jump-right
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: seek-left-short
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: seek-right-short
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: seek-left-long
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: seek-right-long
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: minutes-and-seconds
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: beats-and-measures
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: reset-toolbars
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: mix-and-render
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: mix-and-render-to-new-track
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: resample
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: pan-left
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: pan-right
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: pan-center
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: move-selection-with-tracks
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sync-lock
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: track-pan
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: track-pan-left
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: track-pan-right
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: track-gain
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: track-gain-inc
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: track-gain-dec
+2026-10-03T02:21:22.349 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: track-menu
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: track-close
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sound-activation-level
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: sound-activation
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: overdub
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: s-w-playthrough
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-one-sec
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-to-selection
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-before-selection-start
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-after-selection-start
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-before-selection-end
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-after-selection-end
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-before-and-after-selection-start
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-before-and-after-selection-end
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-cut-preview
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: move-to-prev-label
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: move-to-next-label
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: zoom-normal
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: zoom-sel
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: fit-v
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: skip-sel-start
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: skip-sel-end
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-extra-menus
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-clipping
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-r-m-s
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-audio-setup-t-b
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-cut-copy-paste-t-b
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-transport-t-b
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-device-t-b
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: input-device
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: output-device
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: audio-host
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: input-channels
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-edit-t-b
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-record-meter-t-b
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-play-meter-t-b
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: output-gain
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: output-gain-inc
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: output-gain-dec
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: input-gain
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: input-gain-inc
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: input-gain-dec
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-selection-t-b
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-snapping-t-b
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-spectral-selection-t-b
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-time-signature-t-b
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-time-t-b
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-tools-t-b
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: select-tool
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: envelope-tool
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: draw-tool
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: multi-tool
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: prev-tool
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: next-tool
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: show-transcription-t-b
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-at-speed-looped
+2026-10-03T02:21:22.350 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-at-speed
+2026-10-03T02:21:22.351 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-at-speed-cut-preview
+2026-10-03T02:21:22.351 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: set-play-speed
+2026-10-03T02:21:22.351 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-speed-inc
+2026-10-03T02:21:22.351 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: play-speed-dec
+2026-10-03T02:21:22.351 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: next-higher-peak-frequency
+2026-10-03T02:21:22.351 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: next-lower-peak-frequency
+2026-10-03T02:21:22.351 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: render-pitch-and-speed
+2026-10-03T02:21:22.351 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: pitch-up
+2026-10-03T02:21:22.351 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: pitch-down
+2026-10-03T02:21:22.351 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: new-time-track
+2026-10-03T02:21:22.351 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: scrub
+2026-10-03T02:21:22.351 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: seek
+2026-10-03T02:21:22.351 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: toggle-scrub-ruler
+2026-10-03T02:21:22.351 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: keyboard-scrub-backwards
+2026-10-03T02:21:22.351 | WARN  | main_thread     | ShortcutsRegister::readShortcut | ignoring shortcut for invalid action: keyboard-scrub-forwards
+2026-10-03T02:21:22.361 | WARN  | main_thread     | Qt              | qrc:/qt/qml/Audacity/AppShell/FirstLaunchSetup/FirstLaunchSetupDialog.qml: Setting initial properties failed: FirstLaunchSetupDialog does not have a property called floating
+2026-10-03T02:21:22.385 | INFO  | main_thread     | ActionsDispatcher::doDispatch | try call action: file-new
+2026-10-03T02:21:22.622 | ERROR | main_thread     | AppShellConfiguration::sessionProjectsPaths | [401] The file does not exist
+2026-10-03T02:21:22.694 | INFO  | main_thread     | ActionsDispatcher::doDispatch | try call action: dock-set-open
+2026-10-03T02:21:22.694 | INFO  | main_thread     | CommandDispatcher::dispatch | try call command: command://dock/set-open, params: {dock_name: playbackMeterPanel, open: false, }
+2026-10-03T02:21:22.694 | INFO  | main_thread     | ActionsDispatcher::doDispatch | try call action: dock-set-open
+2026-10-03T02:21:22.694 | INFO  | main_thread     | CommandDispatcher::dispatch | try call command: command://dock/set-open, params: {dock_name: levelsPanel, open: true, }

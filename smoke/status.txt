@@ -1,0 +1,3 @@
+display: {X=0,Y=0,Width=1024,Height=768}
+running after 45 s (first launch): pid 7832, title 'Sada 0.1 beta'
+running after 40 s (main window): pid 2088, title 'Sada 0.1 beta'

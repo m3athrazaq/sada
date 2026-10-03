@@ -1,0 +1,36 @@
+
+FullName                                                                                                     Length
+--------                                                                                                     ------
+C:\Users\runneradmin\AppData\Local\Sada\Sada                                                                 
+C:\Users\runneradmin\AppData\Local\Sada\Sada\audio_plugins_loading                                           
+C:\Users\runneradmin\AppData\Local\Sada\Sada\cache                                                           
+C:\Users\runneradmin\AppData\Local\Sada\Sada\extensions                                                      
+C:\Users\runneradmin\AppData\Local\Sada\Sada\locale                                                          
+C:\Users\runneradmin\AppData\Local\Sada\Sada\logs                                                            
+C:\Users\runneradmin\AppData\Local\Sada\Sada\session                                                         
+C:\Users\runneradmin\AppData\Local\Sada\Sada\SessionData                                                     
+C:\Users\runneradmin\AppData\Local\Sada\Sada\workspaces                                                      
+C:\Users\runneradmin\AppData\Local\Sada\Sada\known_audio_plugins.json                                        41797
+C:\Users\runneradmin\AppData\Local\Sada\Sada\cache\qtpipelinecache-x86_64-little_endian-llp64                
+C:\Users\runneradmin\AppData\Local\Sada\Sada\logs\dumps                                                      
+C:\Users\runneradmin\AppData\Local\Sada\Sada\logs\Sada_261003_022120.log                                     90098
+C:\Users\runneradmin\AppData\Local\Sada\Sada\logs\Sada_261003_022211.log                                     89582
+C:\Users\runneradmin\AppData\Local\Sada\Sada\logs\dumps\attachments                                          
+C:\Users\runneradmin\AppData\Local\Sada\Sada\logs\dumps\reports                                              
+C:\Users\runneradmin\AppData\Local\Sada\Sada\logs\dumps\settings.dat                                         40
+C:\Users\runneradmin\AppData\Local\Sada\Sada\session\session.json                                            243
+C:\Users\runneradmin\AppData\Local\Sada\Sada\SessionData\New Project 2026-10-03 02-21-22 N-1.aup4unsaved     393216
+C:\Users\runneradmin\AppData\Local\Sada\Sada\SessionData\New Project 2026-10-03 02-21-22 N-1.aup4unsaved-shm 32768
+C:\Users\runneradmin\AppData\Local\Sada\Sada\SessionData\New Project 2026-10-03 02-21-22 N-1.aup4unsaved-wal 721192
+C:\Users\runneradmin\AppData\Local\Sada\Sada\SessionData\New Project 2026-10-03 02-22-54 N-1.aup4unsaved     393216
+C:\Users\runneradmin\AppData\Local\Sada\Sada\SessionData\New Project 2026-10-03 02-22-54 N-1.aup4unsaved-shm 32768
+C:\Users\runneradmin\AppData\Local\Sada\Sada\SessionData\New Project 2026-10-03 02-22-54 N-1.aup4unsaved-wal 721192
+
+
+FullName                                                          Length
+--------                                                          ------
+C:\Users\runneradmin\AppData\Roaming\Sada\Sada                    
+C:\Users\runneradmin\AppData\Roaming\Sada\Sada.ini                770
+C:\Users\runneradmin\AppData\Roaming\Sada\Sada\Plug-Ins           
+C:\Users\runneradmin\AppData\Roaming\Sada\Sada\pluginsettings.cfg 89
+
